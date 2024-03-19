@@ -1,0 +1,653 @@
+<main class="main home">
+    <div class="page-content shop-page">
+        <div class="page-header"
+            style="background-image: url(./assets/images/demos/demo-food2/shop-banner.jpg); background-color: #ecebee; height: 250px;">
+            <div class="container p-relative">
+                <div class="banner-content text-center pt-4 appear-animate" data-animation-options="{
+                                'name': 'fadeInUpShorter',
+                                'duration': '1.2s',
+                                'delay': '.2s'
+                            }">
+                    <h2 class="banner-title font-weight-bold font-secondary text-normal ls-m mb-0">Riode Shop
+                    </h2>
+                    <nav class="breadcrumb-nav">
+                        <ul class="breadcrumb justify-content-center">
+                            <li><a href="demo-food2.html"><i class="d-icon-home"></i></a>
+                            <li class="delimiter">/</li>
+                            <li class="active text-body">Riode Shop</li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <nav class="toolbox toolbox-horizontal sticky-toolbox sticky-content fix-top" data-top="1174">
+                <aside class="sidebar sidebar-fixed shop-sidebar">
+                    <div class="sidebar-overlay"></div>
+                    <a class="sidebar-close" href="#"><i class="d-icon-times"></i></a>
+                    <div class="sidebar-content toolbox-left">
+                        <div class="toolbox-item select-menu">
+                            <a class="select-menu-toggle" href="#">Select Size</a>
+                            <ul class="filter-items">
+                                <li><a href="#">Extra Large</a></li>
+                                <li><a href="#">Large</a></li>
+                                <li><a href="#">Medium</a></li>
+                                <li><a href="#">Small</a></li>
+                            </ul>
+                        </div>
+                        <div class="toolbox-item select-menu">
+                            <a class="select-menu-toggle" href="#">Select Color</a>
+                            <ul class="filter-items">
+                                <li><a href="#">Black</a></li>
+                                <li><a href="#">Blue</a></li>
+                                <li><a href="#">Brown</a></li>
+                                <li><a href="#">Green</a></li>
+                            </ul>
+                        </div>
+                        <div class="toolbox-item select-menu">
+                            <a class="select-menu-toggle" href="#">Select Price</a>
+                            <ul class="filter-items filter-price">
+                                <li><a href="#">$0.00 - $50.00</a></li>
+                                <li><a href="#">$50.00 - $100.00</a></li>
+                                <li><a href="#">$100.00 - $200.00</a></li>
+                                <li><a href="#">$200.00+</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </aside>
+                <div class="toolbox-left">
+                    <a href="#"
+                        class="toolbox-item left-sidebar-toggle btn btn-sm btn-outline btn-primary btn-rounded btn-icon-right d-lg-none">
+                        Filter<i class="d-icon-arrow-right"></i></a>
+                    <div class="toolbox-item toolbox-sort select-menu">
+                        <select name="orderby" class="form-control ls-normal">
+                            <option value="default" selected="selected">Default Sorting</option>
+                            <option value="popularity">Most popular</option>
+                            <option value="rating">Average rating</option>
+                            <option value="date">Latest</option>
+                            <option value="price-low">Sort forward price low</option>
+                            <option value="price-high">Sort forward price high</option>
+                            <option value="">Clear custom sort</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="toolbox-right">
+                    <div class="toolbox-item toolbox-show select-box mr-0 mr-sm-3">
+                        <label>show :</label>
+                        <select name="count" class="form-control">
+                            <option value="12">10</option>
+                            <option value="24" selected>12</option>
+                            <option value="36">20</option>
+                            <option value="36">30</option>
+                        </select>
+                    </div>
+                    <div class="toolbox-item toolbox-layout">
+                        <a href="shop-list-mode.html" class="d-icon-mode-list btn-layout"></a>
+                        <a href="shop.html" class="d-icon-mode-grid btn-layout active"></a>
+                    </div>
+                </div>
+            </nav>
+
+            <div class="select-items mb-0">
+                <a href="#" class="filter-clean text-primary fs-12">Clean All</a>
+            </div>
+            <div class="row appear-animate shop-row mb-4" data-animation-options="{
+                'name': 'fadeInLeftShorter',
+                'delay': '.3s'
+            }">
+                <div class="col-lg-3 col-6">
+                    <div class="product text-center product-with-qty mb-4">
+                        <figure class="product-media">
+                            <a href="demo-food2-product.html">
+                                <img src="./assets/images/demos/demo-food2/products/1-1.jpg" alt="product" width="280"
+                                    height="315">
+                                <img src="./assets/images/demos/demo-food2/products/1-2.jpg" alt="product" width="280"
+                                    height="315">
+                            </a>
+                            <div class="product-label-group">
+                                <label class="product-label label-sale">25% Off</label>
+                            </div>
+                            <div class="product-action-vertical">
+                                <a href="#" class="btn-product-icon btn-wishlist" title="Add to wishlist"><i
+                                        class="d-icon-heart"></i></a>
+                            </div>
+                        </figure>
+                        <div class="product-details">
+                            <h3 class="product-name">
+                                <a href="demo-food2-product.html">Paprika</a>
+                            </h3>
+                            <div class="product-price ls-md">
+                                <span class="price">$140.00</span>
+                            </div>
+                            <div class="ratings-container">
+                                <div class="ratings-full">
+                                    <span class="ratings" style="width:100%"></span>
+                                    <span class="tooltiptext tooltip-top"></span>
+                                </div>
+                                <a href="demo-food2-product.html" class="rating-reviews">( 12 reviews )</a>
+                            </div>
+                            <div class="product-action">
+                                <div class="product-quantity">
+                                    <button class="quantity-minus d-icon-minus"></button>
+                                    <input class="quantity form-control" type="number" min="1" max="1000000">
+                                    <button class="quantity-plus d-icon-plus"></button>
+                                </div>
+                                <a href="#" class="btn-product btn-cart" data-toggle="modal"
+                                    data-target="#addCartModal" title="Add to cart"><i
+                                        class="d-icon-bag"></i><span>Add to cart</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-6">
+                    <div class="product text-center product-with-qty mb-4">
+                        <figure class="product-media">
+                            <a href="demo-food2-product.html">
+                                <img src="./assets/images/demos/demo-food2/products/2-1.jpg" alt="product" width="280"
+                                    height="315">
+                                <img src="./assets/images/demos/demo-food2/products/2-2.jpg" alt="product" width="280"
+                                    height="315">
+                            </a>
+                            <div class="product-label-group">
+                                <label class="product-label label-sale">25% Off</label>
+                            </div>
+                            <div class="product-action-vertical">
+                                <a href="#" class="btn-product-icon btn-wishlist" title="Add to wishlist"><i
+                                        class="d-icon-heart"></i></a>
+                            </div>
+                        </figure>
+                        <div class="product-details">
+                            <h3 class="product-name">
+                                <a href="demo-food2-product.html">Grapes</a>
+                            </h3>
+                            <div class="product-price ls-md">
+                                <span class="price">$140.00</span>
+                            </div>
+                            <div class="ratings-container">
+                                <div class="ratings-full">
+                                    <span class="ratings" style="width:100%"></span>
+                                    <span class="tooltiptext tooltip-top"></span>
+                                </div>
+                                <a href="demo-food2-product.html" class="rating-reviews">( 12 reviews )</a>
+                            </div>
+                            <div class="product-action">
+                                <div class="product-quantity">
+                                    <button class="quantity-minus d-icon-minus"></button>
+                                    <input class="quantity form-control" type="number" min="1" max="1000000">
+                                    <button class="quantity-plus d-icon-plus"></button>
+                                </div>
+                                <a href="#" class="btn-product btn-cart" data-toggle="modal"
+                                    data-target="#addCartModal" title="Add to cart"><i
+                                        class="d-icon-bag"></i><span>Add to cart</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-6">
+                    <div class="product text-center product-with-qty mb-4">
+                        <figure class="product-media">
+                            <a href="demo-food2-product.html">
+                                <img src="./assets/images/demos/demo-food2/products/3-1.jpg" alt="product" width="280"
+                                    height="315">
+                                <img src="./assets/images/demos/demo-food2/products/3-2.jpg" alt="product" width="280"
+                                    height="315">
+                            </a>
+                            <div class="product-label-group">
+                                <label class="product-label label-sale">25% Off</label>
+                            </div>
+                            <div class="product-action-vertical">
+                                <a href="#" class="btn-product-icon btn-wishlist" title="Add to wishlist"><i
+                                        class="d-icon-heart"></i></a>
+                            </div>
+                        </figure>
+                        <div class="product-details">
+                            <h3 class="product-name">
+                                <a href="demo-food2-product.html">Tomatoes</a>
+                            </h3>
+                            <div class="product-price ls-md">
+                                <span class="price">$140.00</span>
+                            </div>
+                            <div class="ratings-container">
+                                <div class="ratings-full">
+                                    <span class="ratings" style="width:100%"></span>
+                                    <span class="tooltiptext tooltip-top"></span>
+                                </div>
+                                <a href="demo-food2-product.html" class="rating-reviews">( 12 reviews )</a>
+                            </div>
+                            <div class="product-action">
+                                <div class="product-quantity">
+                                    <button class="quantity-minus d-icon-minus"></button>
+                                    <input class="quantity form-control" type="number" min="1" max="1000000">
+                                    <button class="quantity-plus d-icon-plus"></button>
+                                </div>
+                                <a href="#" class="btn-product btn-cart" data-toggle="modal"
+                                    data-target="#addCartModal" title="Add to cart"><i
+                                        class="d-icon-bag"></i><span>Add to cart</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-6">
+                    <div class="product text-center product-with-qty mb-4">
+                        <figure class="product-media">
+                            <a href="demo-food2-product.html">
+                                <img src="./assets/images/demos/demo-food2/products/4-1.jpg" alt="product" width="280"
+                                    height="315">
+                                <img src="./assets/images/demos/demo-food2/products/4-2.jpg" alt="product" width="280"
+                                    height="315">
+                            </a>
+                            <div class="product-label-group">
+                                <label class="product-label label-sale">25% Off</label>
+                            </div>
+                            <div class="product-action-vertical">
+                                <a href="#" class="btn-product-icon btn-wishlist" title="Add to wishlist"><i
+                                        class="d-icon-heart"></i></a>
+                            </div>
+                        </figure>
+                        <div class="product-details">
+                            <h3 class="product-name">
+                                <a href="demo-food2-product.html">Peaches</a>
+                            </h3>
+                            <div class="product-price ls-md">
+                                <span class="price">$140.00</span>
+                            </div>
+                            <div class="ratings-container">
+                                <div class="ratings-full">
+                                    <span class="ratings" style="width:100%"></span>
+                                    <span class="tooltiptext tooltip-top"></span>
+                                </div>
+                                <a href="demo-food2-product.html" class="rating-reviews">( 12 reviews )</a>
+                            </div>
+                            <div class="product-action">
+                                <div class="product-quantity">
+                                    <button class="quantity-minus d-icon-minus"></button>
+                                    <input class="quantity form-control" type="number" min="1" max="1000000">
+                                    <button class="quantity-plus d-icon-plus"></button>
+                                </div>
+                                <a href="#" class="btn-product btn-cart" data-toggle="modal"
+                                    data-target="#addCartModal" title="Add to cart"><i
+                                        class="d-icon-bag"></i><span>Add to cart</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-6">
+                    <div class="product text-center product-with-qty mb-4">
+                        <figure class="product-media">
+                            <a href="demo-food2-product.html">
+                                <img src="./assets/images/demos/demo-food2/products/1-1.jpg" alt="product" width="280"
+                                    height="315">
+                                <img src="./assets/images/demos/demo-food2/products/1-2.jpg" alt="product" width="280"
+                                    height="315">
+                            </a>
+                            <div class="product-label-group">
+                                <label class="product-label label-sale">25% Off</label>
+                            </div>
+                            <div class="product-action-vertical">
+                                <a href="#" class="btn-product-icon btn-wishlist" title="Add to wishlist"><i
+                                        class="d-icon-heart"></i></a>
+                            </div>
+                        </figure>
+                        <div class="product-details">
+                            <h3 class="product-name">
+                                <a href="demo-food2-product.html">Paprika</a>
+                            </h3>
+                            <div class="product-price ls-md">
+                                <span class="price">$140.00</span>
+                            </div>
+                            <div class="ratings-container">
+                                <div class="ratings-full">
+                                    <span class="ratings" style="width:100%"></span>
+                                    <span class="tooltiptext tooltip-top"></span>
+                                </div>
+                                <a href="demo-food2-product.html" class="rating-reviews">( 12 reviews )</a>
+                            </div>
+                            <div class="product-action">
+                                <div class="product-quantity">
+                                    <button class="quantity-minus d-icon-minus"></button>
+                                    <input class="quantity form-control" type="number" min="1" max="1000000">
+                                    <button class="quantity-plus d-icon-plus"></button>
+                                </div>
+                                <a href="#" class="btn-product btn-cart" data-toggle="modal"
+                                    data-target="#addCartModal" title="Add to cart"><i
+                                        class="d-icon-bag"></i><span>Add to cart</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-6">
+                    <div class="product text-center product-with-qty mb-4">
+                        <figure class="product-media">
+                            <a href="demo-food2-product.html">
+                                <img src="./assets/images/demos/demo-food2/products/2-1.jpg" alt="product" width="280"
+                                    height="315">
+                                <img src="./assets/images/demos/demo-food2/products/2-2.jpg" alt="product" width="280"
+                                    height="315">
+                            </a>
+                            <div class="product-label-group">
+                                <label class="product-label label-sale">25% Off</label>
+                            </div>
+                            <div class="product-action-vertical">
+                                <a href="#" class="btn-product-icon btn-wishlist" title="Add to wishlist"><i
+                                        class="d-icon-heart"></i></a>
+                            </div>
+                        </figure>
+                        <div class="product-details">
+                            <h3 class="product-name">
+                                <a href="demo-food2-product.html">Grapes</a>
+                            </h3>
+                            <div class="product-price ls-md">
+                                <span class="price">$140.00</span>
+                            </div>
+                            <div class="ratings-container">
+                                <div class="ratings-full">
+                                    <span class="ratings" style="width:100%"></span>
+                                    <span class="tooltiptext tooltip-top"></span>
+                                </div>
+                                <a href="demo-food2-product.html" class="rating-reviews">( 12 reviews )</a>
+                            </div>
+                            <div class="product-action">
+                                <div class="product-quantity">
+                                    <button class="quantity-minus d-icon-minus"></button>
+                                    <input class="quantity form-control" type="number" min="1" max="1000000">
+                                    <button class="quantity-plus d-icon-plus"></button>
+                                </div>
+                                <a href="#" class="btn-product btn-cart" data-toggle="modal"
+                                    data-target="#addCartModal" title="Add to cart"><i
+                                        class="d-icon-bag"></i><span>Add to cart</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-6">
+                    <div class="product text-center product-with-qty mb-4">
+                        <figure class="product-media">
+                            <a href="demo-food2-product.html">
+                                <img src="./assets/images/demos/demo-food2/products/3-1.jpg" alt="product" width="280"
+                                    height="315">
+                                <img src="./assets/images/demos/demo-food2/products/3-2.jpg" alt="product" width="280"
+                                    height="315">
+                            </a>
+                            <div class="product-label-group">
+                                <label class="product-label label-sale">25% Off</label>
+                            </div>
+                            <div class="product-action-vertical">
+                                <a href="#" class="btn-product-icon btn-wishlist" title="Add to wishlist"><i
+                                        class="d-icon-heart"></i></a>
+                            </div>
+                        </figure>
+                        <div class="product-details">
+                            <h3 class="product-name">
+                                <a href="demo-food2-product.html">Tomatoes</a>
+                            </h3>
+                            <div class="product-price ls-md">
+                                <span class="price">$140.00</span>
+                            </div>
+                            <div class="ratings-container">
+                                <div class="ratings-full">
+                                    <span class="ratings" style="width:100%"></span>
+                                    <span class="tooltiptext tooltip-top"></span>
+                                </div>
+                                <a href="demo-food2-product.html" class="rating-reviews">( 12 reviews )</a>
+                            </div>
+                            <div class="product-action">
+                                <div class="product-quantity">
+                                    <button class="quantity-minus d-icon-minus"></button>
+                                    <input class="quantity form-control" type="number" min="1" max="1000000">
+                                    <button class="quantity-plus d-icon-plus"></button>
+                                </div>
+                                <a href="#" class="btn-product btn-cart" data-toggle="modal"
+                                    data-target="#addCartModal" title="Add to cart"><i
+                                        class="d-icon-bag"></i><span>Add to cart</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-6">
+                    <div class="product text-center product-with-qty mb-4">
+                        <figure class="product-media">
+                            <a href="demo-food2-product.html">
+                                <img src="./assets/images/demos/demo-food2/products/4-1.jpg" alt="product" width="280"
+                                    height="315">
+                                <img src="./assets/images/demos/demo-food2/products/4-2.jpg" alt="product" width="280"
+                                    height="315">
+                            </a>
+                            <div class="product-label-group">
+                                <label class="product-label label-sale">25% Off</label>
+                            </div>
+                            <div class="product-action-vertical">
+                                <a href="#" class="btn-product-icon btn-wishlist" title="Add to wishlist"><i
+                                        class="d-icon-heart"></i></a>
+                            </div>
+                        </figure>
+                        <div class="product-details">
+                            <h3 class="product-name">
+                                <a href="demo-food2-product.html">Peaches</a>
+                            </h3>
+                            <div class="product-price ls-md">
+                                <span class="price">$140.00</span>
+                            </div>
+                            <div class="ratings-container">
+                                <div class="ratings-full">
+                                    <span class="ratings" style="width:100%"></span>
+                                    <span class="tooltiptext tooltip-top"></span>
+                                </div>
+                                <a href="demo-food2-product.html" class="rating-reviews">( 12 reviews )</a>
+                            </div>
+                            <div class="product-action">
+                                <div class="product-quantity">
+                                    <button class="quantity-minus d-icon-minus"></button>
+                                    <input class="quantity form-control" type="number" min="1" max="1000000">
+                                    <button class="quantity-plus d-icon-plus"></button>
+                                </div>
+                                <a href="#" class="btn-product btn-cart" data-toggle="modal"
+                                    data-target="#addCartModal" title="Add to cart"><i
+                                        class="d-icon-bag"></i><span>Add to cart</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-6">
+                    <div class="product text-center product-with-qty mb-4">
+                        <figure class="product-media">
+                            <a href="demo-food2-product.html">
+                                <img src="./assets/images/demos/demo-food2/products/1-1.jpg" alt="product" width="280"
+                                    height="315">
+                                <img src="./assets/images/demos/demo-food2/products/1-2.jpg" alt="product" width="280"
+                                    height="315">
+                            </a>
+                            <div class="product-label-group">
+                                <label class="product-label label-sale">25% Off</label>
+                            </div>
+                            <div class="product-action-vertical">
+                                <a href="#" class="btn-product-icon btn-wishlist" title="Add to wishlist"><i
+                                        class="d-icon-heart"></i></a>
+                            </div>
+                        </figure>
+                        <div class="product-details">
+                            <h3 class="product-name">
+                                <a href="demo-food2-product.html">Paprika</a>
+                            </h3>
+                            <div class="product-price ls-md">
+                                <span class="price">$140.00</span>
+                            </div>
+                            <div class="ratings-container">
+                                <div class="ratings-full">
+                                    <span class="ratings" style="width:100%"></span>
+                                    <span class="tooltiptext tooltip-top"></span>
+                                </div>
+                                <a href="demo-food2-product.html" class="rating-reviews">( 12 reviews )</a>
+                            </div>
+                            <div class="product-action">
+                                <div class="product-quantity">
+                                    <button class="quantity-minus d-icon-minus"></button>
+                                    <input class="quantity form-control" type="number" min="1" max="1000000">
+                                    <button class="quantity-plus d-icon-plus"></button>
+                                </div>
+                                <a href="#" class="btn-product btn-cart" data-toggle="modal"
+                                    data-target="#addCartModal" title="Add to cart"><i
+                                        class="d-icon-bag"></i><span>Add to cart</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-6">
+                    <div class="product text-center product-with-qty mb-4">
+                        <figure class="product-media">
+                            <a href="demo-food2-product.html">
+                                <img src="./assets/images/demos/demo-food2/products/2-1.jpg" alt="product" width="280"
+                                    height="315">
+                                <img src="./assets/images/demos/demo-food2/products/2-2.jpg" alt="product" width="280"
+                                    height="315">
+                            </a>
+                            <div class="product-label-group">
+                                <label class="product-label label-sale">25% Off</label>
+                            </div>
+                            <div class="product-action-vertical">
+                                <a href="#" class="btn-product-icon btn-wishlist" title="Add to wishlist"><i
+                                        class="d-icon-heart"></i></a>
+                            </div>
+                        </figure>
+                        <div class="product-details">
+                            <h3 class="product-name">
+                                <a href="demo-food2-product.html">Grapes</a>
+                            </h3>
+                            <div class="product-price ls-md">
+                                <span class="price">$140.00</span>
+                            </div>
+                            <div class="ratings-container">
+                                <div class="ratings-full">
+                                    <span class="ratings" style="width:100%"></span>
+                                    <span class="tooltiptext tooltip-top"></span>
+                                </div>
+                                <a href="demo-food2-product.html" class="rating-reviews">( 12 reviews )</a>
+                            </div>
+                            <div class="product-action">
+                                <div class="product-quantity">
+                                    <button class="quantity-minus d-icon-minus"></button>
+                                    <input class="quantity form-control" type="number" min="1" max="1000000">
+                                    <button class="quantity-plus d-icon-plus"></button>
+                                </div>
+                                <a href="#" class="btn-product btn-cart" data-toggle="modal"
+                                    data-target="#addCartModal" title="Add to cart"><i
+                                        class="d-icon-bag"></i><span>Add to cart</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-6">
+                    <div class="product text-center product-with-qty mb-4">
+                        <figure class="product-media">
+                            <a href="demo-food2-product.html">
+                                <img src="./assets/images/demos/demo-food2/products/3-1.jpg" alt="product" width="280"
+                                    height="315">
+                                <img src="./assets/images/demos/demo-food2/products/3-2.jpg" alt="product" width="280"
+                                    height="315">
+                            </a>
+                            <div class="product-label-group">
+                                <label class="product-label label-sale">25% Off</label>
+                            </div>
+                            <div class="product-action-vertical">
+                                <a href="#" class="btn-product-icon btn-wishlist" title="Add to wishlist"><i
+                                        class="d-icon-heart"></i></a>
+                            </div>
+                        </figure>
+                        <div class="product-details">
+                            <h3 class="product-name">
+                                <a href="demo-food2-product.html">Tomatoes</a>
+                            </h3>
+                            <div class="product-price ls-md">
+                                <span class="price">$140.00</span>
+                            </div>
+                            <div class="ratings-container">
+                                <div class="ratings-full">
+                                    <span class="ratings" style="width:100%"></span>
+                                    <span class="tooltiptext tooltip-top"></span>
+                                </div>
+                                <a href="demo-food2-product.html" class="rating-reviews">( 12 reviews )</a>
+                            </div>
+                            <div class="product-action">
+                                <div class="product-quantity">
+                                    <button class="quantity-minus d-icon-minus"></button>
+                                    <input class="quantity form-control" type="number" min="1" max="1000000">
+                                    <button class="quantity-plus d-icon-plus"></button>
+                                </div>
+                                <a href="#" class="btn-product btn-cart" data-toggle="modal"
+                                    data-target="#addCartModal" title="Add to cart"><i
+                                        class="d-icon-bag"></i><span>Add to cart</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-6">
+                    <div class="product text-center product-with-qty mb-4">
+                        <figure class="product-media">
+                            <a href="demo-food2-product.html">
+                                <img src="./assets/images/demos/demo-food2/products/4-1.jpg" alt="product" width="280"
+                                    height="315">
+                                <img src="./assets/images/demos/demo-food2/products/4-2.jpg" alt="product" width="280"
+                                    height="315">
+                            </a>
+                            <div class="product-label-group">
+                                <label class="product-label label-sale">25% Off</label>
+                            </div>
+                            <div class="product-action-vertical">
+                                <a href="#" class="btn-product-icon btn-wishlist" title="Add to wishlist"><i
+                                        class="d-icon-heart"></i></a>
+                            </div>
+                        </figure>
+                        <div class="product-details">
+                            <h3 class="product-name">
+                                <a href="demo-food2-product.html">Peaches</a>
+                            </h3>
+                            <div class="product-price ls-md">
+                                <span class="price">$140.00</span>
+                            </div>
+                            <div class="ratings-container">
+                                <div class="ratings-full">
+                                    <span class="ratings" style="width:100%"></span>
+                                    <span class="tooltiptext tooltip-top"></span>
+                                </div>
+                                <a href="demo-food2-product.html" class="rating-reviews">( 12 reviews )</a>
+                            </div>
+                            <div class="product-action">
+                                <div class="product-quantity">
+                                    <button class="quantity-minus d-icon-minus"></button>
+                                    <input class="quantity form-control" type="number" min="1" max="1000000">
+                                    <button class="quantity-plus d-icon-plus"></button>
+                                </div>
+                                <a href="#" class="btn-product btn-cart" data-toggle="modal"
+                                    data-target="#addCartModal" title="Add to cart"><i
+                                        class="d-icon-bag"></i><span>Add to cart</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <nav class="toolbox toolbox-pagination border-no mb-10 pb-8">
+                <p class="show-info">Showing 9 of 56 Products</p>
+                <ul class="pagination">
+                    <li class="page-item disabled">
+                        <a class="page-link page-link-prev mr-4" href="#" aria-label="Previous" tabindex="-1"
+                            aria-disabled="true">
+                            <i class="d-icon-arrow-left"></i>Prev
+                        </a>
+                    </li>
+                    <li class="page-item active" aria-current="page"><a class="page-link" href="#">1</a>
+                    </li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item page-item-dots"><a class="page-link" href="#">6</a></li>
+                    <li class="page-item">
+                        <a class="page-link page-link-next ml-1" href="#" aria-label="Next">
+                            Next<i class="d-icon-arrow-right"></i>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+</main>
+
+<!-- End of Main -->

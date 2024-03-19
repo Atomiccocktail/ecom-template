@@ -1,0 +1,42 @@
+<main class="main order">
+    <div class="page-content pt-7 pb-10 mb-10">
+        <div class="step-by pr-4 pl-4">
+            <h3 class="title title-simple title-step"><a href="cart.html">1. Shopping Cart</a></h3>
+            <h3 class="title title-simple title-step"><a href="checkout.html">2. Checkout</a></h3>
+            <h3 class="title title-simple title-step active"><a href="order.html">3. Payment</a></h3>
+            <h3 class="title title-simple title-step"><a href="order.html">4. Order Complete</a></h3>
+        </div>
+        <div style="min-height: 500px;">
+            <!-- <button (click)="checkout()">
+                GO TO CHECKOUT
+              </button> -->
+            <!-- <ngx-stripe-payment
+                [stripe]="stripe"
+                [elementsOptions]="elementsOptions"
+                [options]="paymentElementOptions"
+            /> -->
+
+            <!-- <form id="payment-form" style="margin: 5% 20% 0% 20%;display: flex;flex-direction: column;">
+                <div id="payment-element">
+                  Stripe.js injects the Payment Element
+                </div>
+                <div style="width: 100%;display: flex; justify-content: end;margin-top: 4%;">
+                  <button id="submit" style="width: 200px;" (click)="payBookOrder()">
+                    <div class="spinner hidden" id="spinner"></div>
+                    <span id="button-text">Pay now</span>
+                  </button>
+                </div>
+                
+                <div id="payment-message" class="hidden"></div>
+            </form> -->
+            <app-loader></app-loader>
+            <div id="checkout">
+              <!-- Checkout will insert the payment form here -->
+            </div>
+              
+        </div>
+    </div>
+    
+</main>
+<script src="https://js.stripe.com/v3/"></script>
+<!-- End Main -->

@@ -1,0 +1,130 @@
+<main class="main order">
+    <div class="page-content pt-7 pb-10 mb-10">
+        <div class="step-by pr-4 pl-4">
+            <h3 class="title title-simple title-step"><a href="cart.html">1. Shopping Cart</a></h3>
+            <h3 class="title title-simple title-step"><a href="checkout.html">2. Checkout</a></h3>
+            <h3 class="title title-simple title-step active"><a href="order.html">3. Payment</a></h3>
+            <h3 class="title title-simple title-step"><a href="order.html">4. Order Complete</a></h3>
+        </div>
+        
+        <div class="row">
+          <aside class="col-lg-5 sticky-sidebar-wrapper">
+            <div class="summary pt-5">
+              <h3 class="title title-simple text-left text-uppercase">Your Order</h3>
+              <table class="order-table">
+                  <thead>
+                      <tr>
+                          <th>Product</th>
+                          <th>Price</th>
+                          <th>Total</th>
+                      </tr>
+                  </thead>
+                  <tbody>
+                      <!-- <tr>
+                          <td class="product-name">Fashionable Overnight Bag <span
+                                  class="product-quantity">×&nbsp;1</span></td>
+                          <td class="product-total text-body">$110.00</td>
+                      </tr>
+                      <tr>
+                          <td class="product-name">Mackintosh Poket backpack <span
+                                  class="product-quantity">×&nbsp;1</span></td>
+                          <td class="product-total text-body">$180.00</td>
+                      </tr> -->
+                      <tr *ngFor="let cartProducts of cartItemsArrayDisplay; let i = index">
+                          <td class="product-name"> {{cartProducts.name}} <span
+                                  class="product-quantity">×&nbsp; {{cartProducts.quantity}} </span></td>
+                          <td class="product-total text-body">$ {{cartProducts.price.toFixed(2)}}</td>
+                          <td class="product-total text-body">$ {{((cartProducts.price)*(cartProducts.quantity)).toFixed(2)}}</td>
+                      </tr>
+                      <tr class="summary-subtotal">
+                          <td>
+                              <h4 class="summary-subtitle">Subtotal</h4>
+                          </td>
+                          <td></td>
+                          <td class="summary-subtotal-price pb-0 pt-0">$ {{cartTotal.toFixed(2)}}
+                          </td>
+                      </tr>
+                      <tr class="sumnary-shipping shipping-row-last">
+                          <td colspan="2">
+                              <h4 class="summary-subtitle">Calculate Shipping</h4>
+                              <ul>
+                                  <li>
+                                      <div class="custom-radio">
+                                          <input type="radio" id="flat_rate" name="shipping"
+                                              class="custom-control-input" checked>
+                                          <label class="custom-control-label"
+                                              for="flat_rate">Flat rate</label>
+                                      </div>
+                                  </li>
+
+                                  <li>
+                                      <div class="custom-radio">
+                                          <input type="radio" id="free-shipping"
+                                              name="shipping" class="custom-control-input">
+                                          <label class="custom-control-label"
+                                              for="free-shipping">Free
+                                              shipping</label>
+                                      </div>
+                                  </li>
+
+                                  <li>
+                                      <div class="custom-radio">
+                                          <input type="radio" id="local_pickup"
+                                              name="shipping" class="custom-control-input">
+                                          <label class="custom-control-label"
+                                              for="local_pickup">Local pickup</label>
+                                      </div>
+                                  </li>
+                              </ul>
+                          </td>
+                      </tr>
+                      <tr class="summary-total">
+                          <td class="pb-0">
+                              <h4 class="summary-subtitle">Total</h4>
+                          </td>
+                          <td class=" pt-0 pb-0">
+                              <p class="summary-total-price ls-s text-primary">$ {{cartTotal.toFixed(2)}}</p>
+                          </td>
+                      </tr>
+                  </tbody>
+              </table>
+            </div>
+          </aside>
+          <div class="col-lg-7 mb-6 mb-lg-0 pr-lg-4">
+            <div style="min-height: 500px;">
+              <!-- <button (click)="checkout()">
+                  GO TO CHECKOUT
+                </button> -->
+              <!-- <ngx-stripe-payment
+                  [stripe]="stripe"
+                  [elementsOptions]="elementsOptions"
+                  [options]="paymentElementOptions"
+              /> -->
+              <!-- <app-loader></app-loader> -->
+              <form id="payment-form" style="margin: 5% 20% 0% 20%;display: flex;flex-direction: column;">
+                  <!-- <app-loader></app-loader> -->
+                  <div id="payment-element">
+                    <!--Stripe.js injects the Payment Element-->
+                  </div>
+                  <div style="width: 100%;display: flex; justify-content: end;margin-top: 4%;">
+                    <!-- <button id="submit" style="width: 200px;" (click)="payBookOrder()">
+                      <div class="spinner hidden" id="spinner"></div>
+                      <span id="button-text">Pay now</span>
+                    </button> -->
+                    <app-loader></app-loader>
+                    <button type="submit" class="btn btn-dark btn-rounded btn-order" (click)="payBookOrder()">Pay Now</button>
+                  </div>
+                  
+                  <div id="payment-message" class="hidden"></div>
+                </form>
+                
+          </div>
+              
+          </div>
+          
+      </div>
+    </div>
+    
+</main>
+<script src="https://js.stripe.com/v3/"></script>
+<!-- End Main -->

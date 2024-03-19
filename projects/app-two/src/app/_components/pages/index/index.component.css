@@ -1,0 +1,7 @@
+/* @import url(../../../../assets/css/demo3.min.css); */
+::ng-deep .product-media img {
+    display: block;
+    width: 218.5px;
+    height: 246.56px;
+    transition: all 0.5s;
+}

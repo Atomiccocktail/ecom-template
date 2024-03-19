@@ -1,0 +1,15 @@
+
+::ng-deep div > div.product-form.product-qty > div > button{
+    background-color: #28465c;
+    border: 0;
+    flex: 1;
+    min-width: 13rem;
+    font-size: 1.4rem;
+    border-radius: 0.3rem;
+    /* background-color: #f6a800; */
+    transition: background-color 0.3s;
+    color: #fff;
+    cursor: pointer;
+    max-width: 20.7rem;
+    height: 4.5rem;
+}

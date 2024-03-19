@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="{{ STORE_LANGUAGE }}">
+<head>
+  <meta charset="UTF-8">
+
+  <title>{{ STORE_NAME }}</title>
+
+  <meta name="keywords" content="{{ STORE_KEYWORDS }}" />
+  <meta name="description" content="{{ STORE_DESCRIPTION }}">
+  <meta name="author" content="{{ STORE_AUTHOR }}">
+
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="{{ STORE_ICON }}">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="images/icons/favicon.png">
+  <!-- Preload Font -->
+  <link rel="preload" href="./assets/fonts/riode.ttf?5gap68" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="./assets/third-party-library/fontawesome-free/webfonts/fa-solid-900.woff2" as="font" type="font/woff2"
+      crossorigin="anonymous">
+  <link rel="preload" href="./assets/third-party-library/fontawesome-free/webfonts/fa-brands-400.woff2" as="font" type="font/woff2"
+      crossorigin="anonymous">
+  <script>
+      WebFontConfig = {
+          google: { families: [ 'Poppins:300,400,500,600,700,800', 'Oswald:300,400,500,600,700' ] }
+      };
+      ( function ( d ) {
+          var wf = d.createElement( 'script' ), s = d.scripts[ 0 ];
+          wf.src = 'js/webfont.js';
+          wf.async = true;
+          s.parentNode.insertBefore( wf, s );
+      } )( document );
+  </script>
+
+  <link rel="stylesheet" type="text/css" href="./assets/third-party-library/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="./assets/third-party-library/animate/animate.min.css">
+
+    <!-- Plugins CSS File -->
+    <link rel="stylesheet" type="text/css" href="./assets/third-party-library/magnific-popup/magnific-popup.min.css">
+    <link rel="stylesheet" type="text/css" href="./assets/third-party-library/owl-carousel/owl.carousel.min.css">
+
+    <link rel="stylesheet" type="text/css" href="./assets/third-party-library/sticky-icon/stickyicon.css">
+
+  <!-- Main CSS File -->
+  <link rel="stylesheet" type="text/css" href="./assets/css/style.min.css">
+  <link rel="stylesheet" type="text/css" href="./assets/css/demo10.min.css">
+  
+</head>
+<body class="home">
+  <app-root></app-root>
+  
+    <script src="./assets/third-party-library/jquery/jquery.min.js"></script>
+    <script src="./assets/third-party-library/parallax/parallax.min.js"></script>
+    <script src="./assets/third-party-library/elevatezoom/jquery.elevatezoom.min.js"></script>
+    <script src="./assets/third-party-library/magnific-popup/jquery.magnific-popup.min.js"></script>
+
+    <script src="./assets/third-party-library/imagesloaded/imagesloaded.pkgd.min.js"></script>
+    <script src="./assets/third-party-library/owl-carousel/owl.carousel.min.js"></script>
+    <script src="./assets/js/main.min.js"></script>
+    <script src="https://kit.fontawesome.com/74358bad8c.js" crossorigin="anonymous"></script>
+</body>
+</html>
